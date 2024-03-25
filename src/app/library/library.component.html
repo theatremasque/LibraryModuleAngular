@@ -1,0 +1,28 @@
+<div class="view-btn p-card">
+  <p-button label="success" styleClass="p-button-success"></p-button>
+  <p-button label="secondary" styleClass="p-button-secondary"></p-button>
+  <p-button label="danger" styleClass="p-button-danger"></p-button>
+  <p-button label="info" styleClass="p-button-info"></p-button>
+  <p-button label="Submit" styleClass="p-button-primary"></p-button>
+</div>
+<p-table [value]="publications" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Тип</th>
+      <th>ID</th>
+      <th>Назва</th>
+      <th>Бібліографічний опис</th>
+      <th>Рік</th>
+      <th>Сторінок</th>
+      <th>Посилання</th>
+      <th>InWos</th>
+      <th>InScopus</th>
+      <th>InCopernicus</th>
+      <th>Статус</th>
+      <th>Коментар бібліотеки</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-publication>
+  <tr app-query-publication [publication]="publication"></tr>
+  </ng-template>
+</p-table>

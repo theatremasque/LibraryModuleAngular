@@ -1,14 +1,14 @@
-<td>{{publication.typeTitle}}</td>
-<td>{{publication.id}}</td>
-<td>{{publication.title}}</td>
-<td>{{publication.description}}</td>
-<td>{{publication.year}}</td>
-<td>{{publication.pages}}</td>
-<td>{{publication.link}}</td>
-<td>{{publication.isWos}}</td>
-<td>{{publication.isScopus}}</td>
-<td>{{publication.isCopernicus}}</td>
-<td>{{publication.isApproved}}</td>
-<td>{{publication.comments}}</td>
+<td>{{publication?.typeTitle}}</td>
+<td>{{publication?.id}}</td>
+<td>{{publication?.title}}</td>
+<td>{{publication?.description}}</td>
+<td>{{publication?.year}}</td>
+<td>{{publication?.pages}}</td>
+<td><a href="{{publication?.link}}"><i class="pi pi-link"></i></a></td>
+<td app-state-box [state]="publication?.isWos"></td>
+<td app-state-box [state]="publication?.isScopus"></td>
+<td app-state-box [state]="publication?.isCopernicus"></td>
+<td app-state-box [state]="publication?.isApproved"></td>
+<td>{{mappedArray | titlecase}}</td>
 
 

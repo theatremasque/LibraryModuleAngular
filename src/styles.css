@@ -1,18 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
 html, body{
   background-color: gainsboro;
 }
 
-.view-btn{
-  margin: 30px;
-  padding-top: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 1.5em;
-  justify-content: center;
-  height: 60px;
-}
+/*.view-btn{*/
+/*  margin: 30px;*/
+/*  padding-top: 0.5em;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  grid-gap: 1.5em;*/
+/*  justify-content: center;*/
+/*  height: 60px;*/
+/*}*/
 

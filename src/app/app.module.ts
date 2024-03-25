@@ -7,19 +7,27 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
 import { QueryPublicationComponent } from './query-publication/query-publication.component';
+import {CheckboxModule} from "primeng/checkbox";
+import {FormsModule} from "@angular/forms";
+import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
+import { StateBoxComponent } from './state-box/state-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LibraryComponent,
-    QueryPublicationComponent
+    QueryPublicationComponent,
+    StateBoxComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ButtonModule,
     TableModule,
+    TriStateCheckboxModule,
     AppRoutingModule,
+    CheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

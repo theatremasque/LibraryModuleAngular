@@ -9,22 +9,20 @@ export class PublicationService {
   constructor() {
     this.publications = [
       {
-        typeTitle: 'article',
+        typeTitle: 'Стаття',
         id: 1,
-        title: 'title',
-        description: 'description..',
+        title: 'Розробка хатинок для степових їжаків',
+        description: 'Актуалізація та терміновість хатинок(хат для їжів)...',
         year: 2024,
         pages: 1.5,
-        link: 'https://',
+        link: 'https://cpad.ask.fm/197/104/126/-349996972-1skc9ap-cg5dmeker16fehf/original/3oVvt6NKd41.jpg',
         isWos: true,
         isScopus: true,
         isCopernicus: false,
         isApproved: false,
         comments: [
-          { id:1, content: 'some text...' },
-          { id:2, content: 'some text...' },
-          { id:3, content: 'some text...' },
-          { id:4, content: 'some text...' }
+          { id:1, content: 'Чому льоша не допоміг їжам?' },
+          { id:2, content: 'Дуже мало сторінок, треба більше!' },
         ]
       }
     ]

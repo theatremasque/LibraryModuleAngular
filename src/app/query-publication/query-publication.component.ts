@@ -7,9 +7,16 @@ import { Publication } from "../interfaces/publication";
   styleUrl: './query-publication.component.css'
 })
 export class QueryPublicationComponent {
-  @Input() publication: Publication;
+  @Input() publication: Publication | null
+  mappedArray?: string;
 
   constructor() {
-    this.publication = {}
+    this.publication = null;
+    this.mappedArray = ''
+  }
+  ngOnInit(){
+    console.log(this.publication)
+    this.mappedArray = this.publication?.comments?.map(c => c.content)
+      .join(', ');
   }
 }
